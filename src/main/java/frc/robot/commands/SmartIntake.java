@@ -19,6 +19,8 @@ public class SmartIntake extends Command{
 
     @Override
     public void execute() {
+        // Intake objects at a certain speed
+    s_IntakeShooter.setIntake(0.7);
     }
 
     @Override
