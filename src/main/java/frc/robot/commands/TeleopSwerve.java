@@ -43,4 +43,12 @@ public class TeleopSwerve extends Command {
             true
         );
     }
+    // Apply deadband to the input value
+    private double applyDeadband(double value, double deadband) {
+        if (Math.abs(value) < deadband) {
+            return 0.0;
+        } else {
+            return value;
+        }
+    }
 }
